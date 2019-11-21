@@ -6,7 +6,7 @@ namespace Studyday01
     {
         public static void Main(string[] args)
         {
-            //栈的按进与弹出
+            //创建一个长度为10的栈，按进11次，弹出11次
             Stack stack = new Stack();
             stack.num = new string[10];
 
@@ -21,16 +21,10 @@ namespace Studyday01
             {
                 stack.Pop();
             }
-            //继承与多态
-            //Person a = new Person();
-            //a.Greet();
-            //Console.WriteLine("-----------------------------------");
-            //Student b = new Student();
-            //b.Greet();
-            //Console.WriteLine("-----------------------------------");
-            //Person ht = new Student();
-            //ht.Greet();
-            //Console.WriteLine("-----------------------------------");
+
+
+
+
         }
     }
 }

@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace Studyday01
-{
+
+{   //栈的实现
     class Stack
     {
 
@@ -73,9 +74,4 @@ namespace Studyday01
             }
         }
     }
-}
-
-public class OutputStack
-{
-
 }

@@ -6,6 +6,7 @@ namespace Studyday01
     {
         public static void Main(string[] args)
         {
+            //栈的按进与弹出
             Stack stack = new Stack();
             stack.num = new string[10];
 
@@ -20,11 +21,7 @@ namespace Studyday01
             {
                 stack.Pop();
             }
-
-
-
-
-            //集成与多态
+            //继承与多态
             //Person a = new Person();
             //a.Greet();
             //Console.WriteLine("-----------------------------------");
@@ -34,9 +31,6 @@ namespace Studyday01
             //Person ht = new Student();
             //ht.Greet();
             //Console.WriteLine("-----------------------------------");
-
         }
-
     }
-
 }

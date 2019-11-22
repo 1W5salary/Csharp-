@@ -11,15 +11,15 @@ namespace Studyday01
             //创建一个长度为10的栈，按进11次，弹出11次
             Stack stack = new Stack();
             stack.num = new string[10];
-            
+
             //按进
-            for (int i = 1; i <= 9;i++)
+            for (int i = 1; i <= 9; i++)
             {
                 stack.Push("学生");
             }
             stack.Push("侯滔");
             stack.Push("atai");
-            
+
             //弹出
             for (int i = 1; i <= 11; i++)
             {
@@ -33,18 +33,19 @@ namespace Studyday01
             //值类型参数的值传递
             int age = 17;
             grow(age);
-            int grow(int age) {
+            int grow(int age)
+            {
                 age++;
                 return age;
             }
             Console.WriteLine(age);
-            
+
             //引用参数的值传递
             Student houtao = new Student();
             houtao.age = 24;
             houtao.grow(houtao);
             Console.WriteLine(houtao.age);
-            
+
             //值类型的引用传递
             Student clone = houtao;
             clone.age = 20;
@@ -58,6 +59,34 @@ namespace Studyday01
             houtao.grade = 99;
             houtao.improve(houtao);
             Console.WriteLine(houtao.grade);
+
+
+
+
+
+
+
+
+            //测试User类
+            User feige = new User();
+            feige.UserName = "admin";
+            feige.login(feige);
+
+            User houta = new User();
+            houta.UserName = "侯滔";
+            houta.register();
+
+
+
         }
+
+
+
+
+
+
+
+        
+
     }
 }

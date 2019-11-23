@@ -48,7 +48,7 @@ namespace Studyday01
             _container[_top] = null;
             return temp;
         }
-
+        //输出数组
         public void OutputStack() {
             for (int i = 0; i <= _container.Length - 1; i++)
             {

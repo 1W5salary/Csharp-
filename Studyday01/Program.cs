@@ -8,15 +8,39 @@ namespace Studyday01
         public static void Main(string[] args)
         {
 
+
+
+
+
+
+
+
+
+
+
+            //调用仓库类
+            Repoistory repoistory = new Repoistory("192.168.1.1");
+
+
+
+
+
+
+
+
+
+
             //调用栈
             Stack container = new Stack(10);
             container.Push("德玛西亚","诺克萨斯", "德玛西亚", "诺克萨斯","德玛西亚","诺克萨斯","德玛西亚", "诺克萨斯", "德玛西亚", "诺克萨斯");
-            
-
             for (int i = 1; i <= 11; i++) {
                 container.Pop();
             }
             container.OutputStack();
+
+
+
+
 
             //值类型参数的值传递
             int age = 17;
@@ -47,6 +71,8 @@ namespace Studyday01
             houtao.grade = 99;
             houtao.improve(houtao);
             Console.WriteLine(houtao.grade);
+
+
 
 
 

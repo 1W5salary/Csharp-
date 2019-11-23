@@ -4,74 +4,60 @@ using System.Text;
 
 namespace Studyday01
 
-{   //栈的实现
+{
     class Stack
     {
-
-        public String[] num { get; set; }
-
+        private int _top;
+        private string[] _container;
+        public Stack(int length)
+        {
+            _top = 0;
+            _container = new string[length];
+        }
 
         //按进
-        public String[] Push(string s)
+        public void Push(params string[] element)
         {
-            if (num[num.Length - 1] != null) {
-                Console.WriteLine("栈满了，挤不进去了");
-            }
-            for (int i = 0; i < num.Length; i++)
+            for (int i = 0; i < element.Length; i++)
             {
-
-                if (num[i] == null)
+                if (_top >= element.Length)
                 {
-                    num[i] = s;
-
-                    Console.WriteLine(s + "入栈了");
-
-                    break;
-
+                    Console.WriteLine("栈满了，挤不进去了");
+                    return;
                 }
-
+                else {
+                    _container[_top] = element[i];
+                    _top++; 
+                }
+                
             }
-
-            Output(num);
-            return num;
+            return;
         }
 
         //弹出
-        public String[] Pop()
+        public string Pop()
         {
-            if (num[0] == null)
+            if (_top <= 0)
             {
                 Console.WriteLine("栈空了，弹不出去了");
+                return "";
             }
-            else
-            {
-                for (int i = (num.Length-1); i >= 0; i--)
-                {
-                    if (num[i] != null)
-                    {
-                        num[i] = null;
-                        Console.WriteLine("弹出去了一个");
-                        break;
-                    }
-
-
-                }
-            
-            }
-            Output(num);
-            return num;
+            //else { }
+            _top--;
+            string temp = _container[_top];
+            _container[_top] = null;
+            return temp;
         }
 
-        //输出
-        public void Output(String[] num)
-        {
-            for (int i = 0; i < num.Length; i++)
+        public void OutputStack() {
+            for (int i = 0; i <= _container.Length - 1; i++)
             {
-                if (num[i] != null)
-                {
-                    Console.WriteLine(num[i]);
-                }
+                Console.WriteLine(_container[i]);
             }
+        
         }
     }
+
 }
+
+

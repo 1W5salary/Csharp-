@@ -8,27 +8,15 @@ namespace Studyday01
         public static void Main(string[] args)
         {
 
-            //创建一个长度为10的栈，按进11次，弹出11次
-            Stack stack = new Stack();
-            stack.num = new string[10];
+            //调用栈
+            Stack container = new Stack(10);
+            container.Push("德玛西亚","诺克萨斯", "德玛西亚", "诺克萨斯","德玛西亚","诺克萨斯","德玛西亚", "诺克萨斯", "德玛西亚", "诺克萨斯");
+            
 
-            //按进
-            for (int i = 1; i <= 9; i++)
-            {
-                stack.Push("学生");
+            for (int i = 1; i <= 11; i++) {
+                container.Pop();
             }
-            stack.Push("侯滔");
-            stack.Push("atai");
-
-            //弹出
-            for (int i = 1; i <= 11; i++)
-            {
-                stack.Pop();
-            }
-
-
-
-
+            container.OutputStack();
 
             //值类型参数的值传递
             int age = 17;

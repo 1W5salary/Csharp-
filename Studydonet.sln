@@ -3,11 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29503.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Studyday01", "Studyday01\Studyday01.csproj", "{54254540-8A89-4550-B20E-CFC017E96477}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Csharp", "Studyday01\Csharp.csproj", "{54254540-8A89-4550-B20E-CFC017E96477}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FECC1273-3038-4C19-93FB-5234EDA471EE}"
 	ProjectSection(SolutionItems) = preProject
 		17bang.sql = 17bang.sql
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CsharpTest", "CsharpTest\CsharpTest.csproj", "{A2E7E9A4-96BC-4901-B2F0-5AF8D25318C2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{54254540-8A89-4550-B20E-CFC017E96477} = {54254540-8A89-4550-B20E-CFC017E96477}
 	EndProjectSection
 EndProject
 Global
@@ -20,6 +25,10 @@ Global
 		{54254540-8A89-4550-B20E-CFC017E96477}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54254540-8A89-4550-B20E-CFC017E96477}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54254540-8A89-4550-B20E-CFC017E96477}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2E7E9A4-96BC-4901-B2F0-5AF8D25318C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2E7E9A4-96BC-4901-B2F0-5AF8D25318C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2E7E9A4-96BC-4901-B2F0-5AF8D25318C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2E7E9A4-96BC-4901-B2F0-5AF8D25318C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

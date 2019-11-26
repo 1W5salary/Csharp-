@@ -5,15 +5,11 @@ namespace Studyday01
 {
     class Program
     {
+        public enum level { 
+                    
+        }
         public static void Main(string[] args)
         {
-
-
-
-
-
-
-
 
 
 
@@ -32,8 +28,9 @@ namespace Studyday01
 
             //调用栈
             Stack container = new Stack(10);
-            container.Push("德玛西亚","诺克萨斯", "德玛西亚", "诺克萨斯","德玛西亚","诺克萨斯","德玛西亚", "诺克萨斯", "德玛西亚", "诺克萨斯");
-            for (int i = 1; i <= 11; i++) {
+            container.Push("德玛西亚", "诺克萨斯", "德玛西亚", "诺克萨斯", "德玛西亚", "诺克萨斯", "德玛西亚", "诺克萨斯", "德玛西亚", "诺克萨斯");
+            for (int i = 1; i <= 11; i++)
+            {
                 container.Pop();
             }
             container.OutputStack();
@@ -100,7 +97,8 @@ namespace Studyday01
 
 
 
-        
+
 
     }
 }
+

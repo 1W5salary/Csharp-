@@ -49,6 +49,7 @@ namespace CsharpTest
             Assert.AreEqual(doubleLink01.linkhead, node01);
             Assert.AreEqual(doubleLink01.linktail, node03);
             Assert.AreEqual(node01.next, node02);
+            Assert.AreEqual(node02.previous, node01);
         }
         [Test]
         //≤‚ ‘¥”∫Û≤Â»ÎNode
@@ -67,6 +68,7 @@ namespace CsharpTest
         }
 
         //≤‚ ‘…æ≥˝
+        [Test]
         public void deletNode() 
         {
             Node node01 = new Node(1);
@@ -78,9 +80,19 @@ namespace CsharpTest
             Assert.AreEqual(doubleLink01.linkhead, node02);
             Assert.AreEqual(doubleLink01.linktail, node03);
             Assert.AreEqual(doubleLink01.linkhead.next, node03);
+            Assert.AreEqual(node03.previous, doubleLink01.linkhead);
+            //doubleLink01.deleteNode(2);
+            //Assert.AreEqual(doubleLink01.linkhead, node03);
+            //Assert.AreEqual(doubleLink01.linktail, node03);
+            //doubleLink01.deleteNode(3);
+            doubleLink01.deleteNode(3);
+            Assert.AreEqual(doubleLink01.linkhead, node02);
+            Assert.AreEqual(doubleLink01.linktail, node02);
+
         }
 
         //≤‚ ‘∏¸∏ƒ
+        [Test]
         public void updateNodelink() 
         {
             Node node01 = new Node(1);
@@ -97,6 +109,7 @@ namespace CsharpTest
         }
 
         //≤‚ ‘≤È’“
+        [Test]
         public void findNodeBy() {
             Node node01 = new Node(1);
             Node node02 = new Node(2);

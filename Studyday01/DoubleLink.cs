@@ -128,7 +128,6 @@ namespace Csharp
                     else
                     {
                         findedNode = findedNode.next;
-
                     }
                 }
                 Console.WriteLine("链表中没有这个值");
